@@ -1,9 +1,15 @@
 const notes = require('express').Router();
 const { v4: uuidv4 } = require('uuid');
-const { readFromFile, readAndAppend, writeTofFile, } = require('../helpers/fsUtils');
+
+const { 
+  readFromFile, 
+  readAndAppend, 
+  writeToFile, 
+} = require('.. /helpers/fsUtils');
+
 // GET Route for retrieving all the notes
 notes.get('/', (req, res) => {
-    console.info(`${rep.method} request recieved for notes`);
+    console.info(`${req.method} request recieved for notes`);
   readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
 });
 
@@ -13,7 +19,7 @@ notes.get('/:note_id', (req, res) => {
     readFromFile('./db/db.json')
       .then((data) => JSON.parse(data))
       .then((json) => {
-        const result = json.filter((note) => note.tip_id === tipId);
+        const result = json.filter((note) =>  note.tip_id === tipId);
         return result.length > 0
           ? res.json(result)
           : res.json('No note with that ID');
