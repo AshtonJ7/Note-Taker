@@ -32,7 +32,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 - HTML
 - CSS
 
-##Screenshot
+## Screenshot
 
 ![image](https://github.com/AshtonJ7/makenotes/assets/62944042/ce7cdec2-12cd-43cb-b81c-b111a45b91e2)
 
