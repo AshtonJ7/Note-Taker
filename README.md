@@ -1,5 +1,6 @@
-# Note-Taker
-This is an application called Note Taker that can be used to write and save notes
+# Express.js Note Taker
+
+This is an application that can be used to write and save notes.
 
 ## USER STORY
 AS A small business owner
@@ -22,3 +23,19 @@ WHEN I click on an existing note in the list in the left-hand column
 THEN that note appears in the right-hand column
 WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
+
+## Tech
+
+- Javascript 
+- NODE.JS
+- Express.js
+- HTML
+- CSS
+
+##Screenshot
+
+![image](https://github.com/AshtonJ7/makenotes/assets/62944042/ce7cdec2-12cd-43cb-b81c-b111a45b91e2)
+
+##Links
+
+https://makenotes-03c8c8e35784.herokuapp.com/notes
